@@ -89,3 +89,51 @@ npm run build
 
 ```
 This will generate an optimized version of the app in the build folder, ready for deployment to services like Netlify, Vercel, or GitHub Pages.
+
+## How to Contribute
+
+### 1. Fork the Repository
+
+First, go to the GitHub repository page and click on the **Fork** button in the top-right corner to create a copy of the repository under your GitHub account.
+
+### 2. Clone Your Fork to Your Local Machine
+
+Once you've forked the repository, clone it to your local machine by running the following command:
+```bash
+git clone https://github.com/yourusername/quiz-app.git
+cd quiz-app
+```
+### 3. Create a New Branch
+Before making any changes, create a new branch to work on your feature:
+
+```bash
+git checkout -b feature-name
+````
+Replace feature-name with a descriptive name for the feature you're adding.
+
+### 4. Make Your Changes and Commit Them
+After making your changes to the code, add the modified files to the staging area:
+
+```bash
+git add .
+```
+Commit the changes with a descriptive commit message:
+```bash
+git commit -am 'Add new feature'
+```
+
+### 5. Push to Your Branch
+Once you've committed your changes, push them to your branch on your forked repository:
+
+```bash
+git push origin feature-name
+```
+
+### 6. Create a Pull Request
+Go to the repository page on GitHub, and you’ll see an option to create a Pull Request from your newly pushed branch. Click "Compare & pull request" and submit the pull request to the original repository.
+
+Once your changes are reviewed and approved, they will be merged into the main codebase.
+```bash
+This will now provide clear, step-by-step Git commands for contributing to the repository in a clean and structured way.
+```
+
