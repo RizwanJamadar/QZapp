@@ -71,3 +71,21 @@ npm install
 
 ```
 This will download and install all the necessary packages to run the project.
+
+### 3. Run the App Locally
+To run the app in development mode:
+
+```bash
+npm run dev
+
+```
+After running the above command, the app will be available at http://localhost:5173. You can open this URL in your browser to interact with the quiz app.
+
+### 4. Build the App for Production
+If you are ready to deploy the app or want to create a production-ready build, you can run:
+
+```bash
+npm run build
+
+```
+This will generate an optimized version of the app in the build folder, ready for deployment to services like Netlify, Vercel, or GitHub Pages.
