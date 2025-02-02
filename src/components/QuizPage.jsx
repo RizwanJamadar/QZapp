@@ -18,7 +18,7 @@ function QuizPage({ userName, setUserName, setScore }) {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8800/api/quiz")
+      .get("https://quizappbackend-jwm5.onrender.com/api/quiz")
       .then((response) => {
         setQuizData(response.data);
       })
@@ -79,7 +79,7 @@ function QuizPage({ userName, setUserName, setScore }) {
           Time Left: <span className="font-semibold text-yellow-400">{minutes}:{seconds < 10 ? "0" : ""}{seconds}</span>
         </h3>
         <p className="text-sm bg-gray-700 px-3 py-1 rounded-full">
-          Difficulty: <span className="font-bold text-blue-400">{quizData.difficulty_level || "N/A"}</span>
+          Questions: <span className="font-bold text-blue-400">{currentQuestion + 1}/10</span>
         </p>
       </div>
 
@@ -87,7 +87,7 @@ function QuizPage({ userName, setUserName, setScore }) {
       <div className="w-96 bg-gray-700 rounded-full h-2 mt-2">
         <div
           className="bg-yellow-400 h-2 rounded-full"
-          style={{ width: `${((currentQuestion + 1) / quizData.questions.length) * 100}%` }}
+          style={{ width: `${((currentQuestion) / quizData.questions.length) * 100}%` }}
         ></div>
       </div>
 
