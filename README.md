@@ -57,6 +57,17 @@ A web-based interactive quiz application built with **React**, featuring **gamif
 
 ### 1. Clone the repository
 
+First, clone the repository to your local machine by running the following command:
 ```bash
 git clone https://github.com/yourusername/quiz-app.git
 cd quiz-app
+
+```
+
+### 2. Install Dependencies
+Make sure you have Node.js installed on your machine. Then, install the required dependencies by running:
+```bash
+npm install
+
+```
+This will download and install all the necessary packages to run the project.
